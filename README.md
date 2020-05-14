@@ -12,10 +12,8 @@ The Google Colab notebook for training the model is located in this repo, named 
 
 The Google Colab notebook for detecting laughter in YouTube videos is located in this repo, named `WMS_predict_YT.ipynb`. (Suggested to open in Colab). This is also listed as a .py file called `predict.py`.
 
-Currently working on putting this up as a website, for comedians to paste a link to their sets and immediately seeing laughter statistics on it. 
-
 The dataset the model was trained can be downloaded here: https://drive.google.com/open?id=1hyINuRXl6QXOPwLZIDjNbThiTsCxOMpv
 
 And the labeled CSVs corresponding to the above dataset can be downloaded here: https://drive.google.com/open?id=1cTRqzzFFzoC9QgOZ5OKecSgf8ROar5c7
 
-
+Currently working on putting project up as a stand-alone website. 
