@@ -6,14 +6,14 @@ To do so, I trained a recurrant neural network on around ~20 stand-up comedy set
 
 This trained model can then be used to reasonably detect laughter in stand-up comedy sets it hadn't been trained on. 
 
-All the code in this project was written on ran on [Google Colaboratory](https://research.google.com/colaboratory/faq.html). 
+The model was initially trained using code written on [Google Colaboratory](https://research.google.com/colaboratory/faq.html). 
 
 The Google Colab notebook for training the model is located in this repo, named `WMS_train_model.ipynb`. (Suggested to open in Colab)
 
-The Google Colab notebook for detecting laughter in YouTube videos is located in this repo, named `WMS_predict_YT.ipynb`. (Suggested to open in Colab). This is also listed as a .py file called `predict.py`.
+The Google Colab notebook for detecting laughter in YouTube videos is located in this repo, named `WMS_predict_YT.ipynb`. (Suggested to open in Colab). 
 
 The dataset the model was trained can be downloaded here: https://drive.google.com/open?id=1hyINuRXl6QXOPwLZIDjNbThiTsCxOMpv
 
 And the labeled CSVs corresponding to the above dataset can be downloaded here: https://drive.google.com/open?id=1cTRqzzFFzoC9QgOZ5OKecSgf8ROar5c7
 
-Currently working on putting project up as a stand-alone website. 
+Using this model, I also (am in the process) of creating a basic website allowing easy use of the trained model to detect laughs in stand-up comedy set. `wms.py` is a slightly more developed version of the above predict notebook, and `app.py` is the web server that using [Flask](https://flask.palletsprojects.com/en/1.1.x/) microframework. The `templates` folder contains a basic HTML UI for users to paste a YouTube link and see the laughter statistics. 
