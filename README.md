@@ -4,6 +4,8 @@ The goal of this project was to create a laughter detector for stand-up comedy s
 
 ![plot](plot.png)
 
+The above plot is detected laughs in a [Tonight Show set by Mark Normand](https://www.youtube.com/watch?v=bCoJduAhbgs)
+
 To create this stand-up comedy set laugh detector, I trained a recurrant neural network on around ~20 stand-up comedy sets available on YouTube. These sets were chunked into 1 second .wav files, totalling about ~6000 .wav files, and hand-labeled for whether there was laughter. Each second was converted into its Mel-frequency Cepstral Coefficient (MFCC), essentially a mathematical transformation that converts a noisy .wav into a 99x13 set of features that somewhat approximates the way that the human ear breaks down sound. I then trained my RNN on this data. 
 
 This trained model can then be used to reasonably detect laughter in stand-up comedy sets it hadn't been trained on. During training it reaches validation accuracy of ~92-93%, with most of the missed classifications being at the edges of laughs, which for the purposes of this project does not matter so much. 
